@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* //bg root */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.App{
+  background-color:whitesmoke;
 }
+/* navbar heading */
+
+.navhead{
+  font-family: 'Goldman', cursive;
+  cursor: pointer;
+ 
+}
+.navhead:hover{
+ color: goldenrod
+}
+.navbarmain{
+  color: white;
+}
+.logodeepak{
+  font-family: 'Satisfy', cursive;
+  
+}
+#iconrotatenav{
+  animation: mymovenav 6s infinite linear;
+    
+}@keyframes mymovenav {
+  0% { 
+    transform: rotate(0); 
+  }
+  100% { 
+    transform: rotate(360deg);
+  }
+
+}
+#iconrotate{
+    animation: mymove 2.7s infinite;   
+}
+@keyframes mymove {
+    40% {transform: rotate(10deg);}
+  }
+
+  /* logoabout github and linkedin size */
+  .logoabout{
+    width: 100px;
+   height: 100px;
+   transition:all 0.3s ease;
+   margin-top: 10px;
+
+  }
+  .logoabout1{
+    width: 120px;
+   height: 120px;
+   margin-top: 10px;
+
+  }
+.logoabout:hover{
+  margin-top: 0px;
+  animation: mymove1 2.7s infinite;   
+  width: 132px;
+  height: 132px;
+
+}
+@keyframes mymove1 {
+    20% {transform: rotate(-10deg);}
+    40% {transform: rotate(10deg);}
+  }
+  .logoabout1:hover{
+    margin-top: 0px;
+    animation: mymove2 2.7s infinite;   
+    width: 142px;
+    height: 142px;
+  
+  }
+  @keyframes mymove2 {
+      20% {transform: rotate(-15deg);}
+      40% {transform: rotate(15deg);}
+    }
