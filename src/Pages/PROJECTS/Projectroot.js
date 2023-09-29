@@ -24,11 +24,15 @@ import { red } from "@mui/material/colors";
 import MovieIcon from "@mui/icons-material/Movie";
 import { pink } from "@mui/material/colors";
 import Box from "@mui/material/Box";
+import SchoolIcon from '@mui/icons-material/School';
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import MovieBook from "./Projectimages/MovieBook.png";
 import Zen from "./Projectimages/zenclass.png";
+import myschool from "./Projectimages/myschool.png";
+
+
 
 //Skills
 import L_HTML5 from "../IMAGES/html-5.svg";
@@ -47,6 +51,7 @@ import L_MONGO from "../IMAGES/mongodb.svg";
 import { Button, Grid } from "@mui/material";
 import Project1 from "./Project1";
 import Project2 from "./Project2";
+import Project3 from "./Project3";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -68,6 +73,11 @@ export default function CustomizedTimeline() {
   const [expanded1, setExpanded1] = React.useState(false);
   const handleExpandClick1 = () => {
     setExpanded1(!expanded1);
+  };
+
+  const [expanded2, setExpanded2] = React.useState(false);
+  const handleExpandClick2 = () => {
+    setExpanded2(!expanded2);
   };
 
 
@@ -213,41 +223,31 @@ export default function CustomizedTimeline() {
           </TimelineContent>
         </TimelineItem>
 
-        {/* project2  zenclass clone*/}
-
-        {/* <TimelineItem>
+        {/* project3 and 4  myschool*/}
+        <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
+            align="right"
             variant="body2"
             color="text.secondary"
           >
-            time pls
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="secondary">
-              <LaptopMacIcon sx={{ fontSize: 50 }} />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent>
-            <Card className="cardstyleproject2">
+           <Card className="cardstyleproject2">
               <CardHeader
-                title="Zenclass Clone"
-                subheader="Clone of Guvi Zenclass Learning Portal"
+                title="MySchool"
+                subheader="A Simple School management app model for Students & teachers"
               />
 
               <CardMedia
-                className="border p-3"
+                className="border p-2"
                 component="img"
-                image={Zen}
+                image={myschool}
                 alt=""
               />
 
               <CardActions disableSpacing>
                 <IconButton>
                   <a
-                    href="https://guvizenclassclone.onrender.com/"
+                    href="https://myschool-u9je.onrender.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -258,7 +258,7 @@ export default function CustomizedTimeline() {
                 </IconButton>
                 <IconButton>
                   <a
-                    href="https://github.com/deepaksm24/zenclassclone"
+                    href="https://github.com/deepaksm24/MyschoolApp"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -269,35 +269,37 @@ export default function CustomizedTimeline() {
                 </IconButton>
                 <IconButton>
                   <ExpandMore
-                    expand={expanded1}
-                    onClick={handleExpandClick1}
-                    aria-expanded={expanded1}
+                    expand={expanded2}
+                    onClick={handleExpandClick2}
+                    aria-expanded={expanded2}
                     aria-label="show more"
                   >
                     <ExpandMoreIcon />
                   </ExpandMore>
                 </IconButton>
               </CardActions>
-              <Collapse in={expanded1} timeout="auto" unmountOnExit>
+              <Collapse in={expanded2} timeout="auto" unmountOnExit>
                 <CardContent>
-                  <Project2 />
+
+                  <Project3 />
+
+
                 </CardContent>
               </Collapse>
             </Card>
-          </TimelineContent>
-        </TimelineItem>
-
-      
-
-        <TimelineItem>
+          </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+            <TimelineConnector />
+            <TimelineDot>
+              {/* <MovieIcon sx={{ color: pink[500], fontSize: 50 }} />{" "} */}
+              <SchoolIcon sx={{ color: pink[500], fontSize: 50 }} />{" "}
+              </TimelineDot>
             <TimelineDot color="secondary">
-              <RepeatIcon />
+            <LaptopMacIcon sx={{ fontSize: 50 }} />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <TimelineContent>
             <Card
               className="cardstyleproject"
               // style={{width: "22rem"}}
@@ -355,7 +357,8 @@ export default function CustomizedTimeline() {
               </Collapse>
             </Card>
           </TimelineContent>
-        </TimelineItem> */}
+        </TimelineItem>
+        
       </Timeline>
     </div>
   );
