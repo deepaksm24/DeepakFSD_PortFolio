@@ -114,6 +114,12 @@ font-family:'Times New Roman', Times, serif;
 font-size: 40px;
 color: goldenrod;
 cursor: pointer;
+animation: count 5s infinite;
+}
+@keyframes count {
+  25%  {font-size: 5%;}
+  50%  {font-size: 60px;}
+  100% {font-size: 70px;}
 }
 .modelbox{
   font-family: "Goldman", cursive;
@@ -124,5 +130,8 @@ cursor: pointer;
  .projectviewpoint{
   /* display: none; */
  }
+ 
+}
+.dotm{
  
 }

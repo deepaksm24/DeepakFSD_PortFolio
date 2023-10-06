@@ -15,7 +15,7 @@ function Aboutme() {
 
         </div>
         <div className="col-lg-6 col-md-6 col-sm-12">
-          <div className="profile border border-3 p-3">
+          <div className="profile border border-3 p-3 rounded">
             <br />
             Full Stack Web Developer with expertise of React.js, Redux, React
             Hooks, HTML, CSS.
