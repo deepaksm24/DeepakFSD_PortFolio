@@ -8,6 +8,7 @@ import Skills from "./Pages/Skills";
 import CustomizedTimeline from "./Pages/PROJECTS/Projectroot";
 import Aboutme from "./Pages/Aboutme";
 import Contact from "./Pages/Contact";
+import Projectsmall from "./Pages/PROJECTS/Projectsmall";
 
 function App() {
   return (
@@ -33,7 +34,9 @@ function App() {
           <Skills/>
         </div>
         <div id="projects" className="">
-          <CustomizedTimeline/>
+          
+          <div className="projectviewpoint"><CustomizedTimeline/></div>
+         <div className="projectviewpointsmall"><Projectsmall/></div>
         </div>
         <div id="contact" className="p-5 m-5">
           <Contact/>

@@ -19,9 +19,9 @@ function Link1icon() {
               <img src={githuglogo} className="img-fluid mt-3" alt="" />
             </div>
           </a>
-          <div className="logoabout1">
+          {/* <div className="logoabout1">
             <img src={linkedinlogo} className="img-fluid" alt="" />
-          </div>
+          </div> */}
         </div>
       </Jump>
       <br />

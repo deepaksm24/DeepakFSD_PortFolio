@@ -4,6 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+
+
+
+
+
 .App {
   background-color: whitesmoke;
 }
@@ -100,4 +108,21 @@
 .ant-message {
 	margin-top: 70px;
   font-family: "Goldman", cursive;
+}
+.count{
+font-family:'Times New Roman', Times, serif;
+font-size: 40px;
+color: goldenrod;
+cursor: pointer;
+}
+.modelbox{
+  font-family: "Goldman", cursive;
+}
+.projectviewpointsmall{
+}
+@media only screen and (max-width: 600px) {
+ .projectviewpoint{
+  /* display: none; */
+ }
+ 
 }

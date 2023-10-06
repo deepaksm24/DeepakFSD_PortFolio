@@ -5,7 +5,7 @@ import Certificate from "./Certificate";
 
 function Aboutme() {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <Tada>
         <h1 className="text-center font-details-b">About me</h1>
       </Tada>
@@ -80,9 +80,9 @@ function Aboutme() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button className="m-2" variant="outline-info">
+                {/* <Button className="m-2" variant="outline-info">
                   LinkedIn
-                </Button>
+                </Button> */}
               </a>
             </div>
           </div>
