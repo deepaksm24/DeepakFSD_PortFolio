@@ -1,81 +1,103 @@
 /* //bg root */
 
-@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-
-.App{
-  background-color:whitesmoke;
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+.App {
+  background-color: whitesmoke;
 }
 /* navbar heading */
 
-.navhead{
-  font-family: 'Goldman', cursive;
+.navhead {
+  font-family: "Goldman", cursive;
   cursor: pointer;
- 
 }
-.navhead:hover{
- color: goldenrod
+.navhead:hover {
+  color: goldenrod;
 }
-.navbarmain{
+.navbarmain {
   color: white;
 }
-.logodeepak{
-  font-family: 'Satisfy', cursive;
-  
+.logodeepak {
+  font-family: "Satisfy", cursive;
 }
-#iconrotatenav{
+#iconrotatenav {
   animation: mymovenav 6s infinite linear;
-    
-}@keyframes mymovenav {
-  0% { 
-    transform: rotate(0); 
+}
+@keyframes mymovenav {
+  0% {
+    transform: rotate(0);
   }
-  100% { 
+  100% {
     transform: rotate(360deg);
   }
-
 }
-#iconrotate{
-    animation: mymove 2.7s infinite;   
+#iconrotate {
+  animation: mymove 2.7s infinite;
 }
 @keyframes mymove {
-    40% {transform: rotate(10deg);}
+  40% {
+    transform: rotate(10deg);
   }
+}
 
-  /* logoabout github and linkedin size */
-  .logoabout{
-    width: 100px;
-   height: 100px;
-   transition:all 0.3s ease;
-   margin-top: 10px;
-
-  }
-  .logoabout1{
-    width: 120px;
-   height: 120px;
-   margin-top: 10px;
-
-  }
-.logoabout:hover{
+/* logoabout github and linkedin size */
+.logoabout {
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.logoabout1 {
+  width: 120px;
+  height: 120px;
+  margin-top: 10px;
+}
+.logoabout:hover {
   margin-top: 0px;
-  animation: mymove1 2.7s infinite;   
+  animation: mymove1 2.7s infinite;
   width: 132px;
   height: 132px;
-
 }
 @keyframes mymove1 {
-    20% {transform: rotate(-10deg);}
-    40% {transform: rotate(10deg);}
+  20% {
+    transform: rotate(-10deg);
   }
-  .logoabout1:hover{
-    margin-top: 0px;
-    animation: mymove2 2.7s infinite;   
-    width: 142px;
-    height: 142px;
-  
+  40% {
+    transform: rotate(10deg);
   }
-  @keyframes mymove2 {
-      20% {transform: rotate(-15deg);}
-      40% {transform: rotate(15deg);}
-    }
+}
+.logoabout1:hover {
+  margin-top: 0px;
+  animation: mymove2 2.7s infinite;
+  width: 142px;
+  height: 142px;
+}
+@keyframes mymove2 {
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(15deg);
+  }
+}
+
+.profile {
+  font-family: "Roboto", sans-serif;
+}
+.carousel-indicators {
+  display: none;
+}
+.certificate {
+  font-family: 'Courgette', cursive;
+}
+.gold{
+  font-family: "Goldman", cursive;
+  color: goldenrod;
+
+}
+.ant-message {
+	margin-top: 70px;
+  font-family: "Goldman", cursive;
+}

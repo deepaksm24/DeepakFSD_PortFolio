@@ -47,10 +47,9 @@ export default function TransNav() {
        
         >
           <MDBNavbarNav  className="d-flex justify-content-end">
-            {/* <ScrollIntoView selector="#about" smooth>
+            <ScrollIntoView selector="#aboutme" smooth>
               <MDBNavbarItem className="navhead h4 m-3">About</MDBNavbarItem>
-            </ScrollIntoView> */}
-
+            </ScrollIntoView>
             <ScrollIntoView selector="#skills" smooth>
               <MDBNavbarItem className="navhead h4 m-3">Skills</MDBNavbarItem>{" "}
             </ScrollIntoView>

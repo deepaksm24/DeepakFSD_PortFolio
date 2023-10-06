@@ -80,12 +80,12 @@ export const skills = {
         imgSrc: L_NETLIFY,
         skillName: "Netlify",
       },
-      {
-        link: "https://pages.github.com/",
-        imgAltText: "GitHub Pages",
-        imgSrc: L_GITHUB_PAGES,
-        skillName: "GitHub Pages",
-      },
+      // {
+      //   link: "https://pages.github.com/",
+      //   imgAltText: "GitHub Pages",
+      //   imgSrc: L_GITHUB_PAGES,
+      //   skillName: "GitHub Pages",
+      // },
      
     ],
     databases: [

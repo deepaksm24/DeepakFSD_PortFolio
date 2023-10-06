@@ -300,7 +300,7 @@ export default function CustomizedTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            <Card
+            {/* <Card
               className="cardstyleproject"
               // style={{width: "22rem"}}
             >
@@ -355,7 +355,7 @@ export default function CustomizedTimeline() {
                   <Project1 />
                 </CardContent>
               </Collapse>
-            </Card>
+            </Card> */}
           </TimelineContent>
         </TimelineItem>
         

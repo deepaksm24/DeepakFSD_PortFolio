@@ -4,8 +4,7 @@ import TitleMessage from './Title'
 function About() {
   return (
     <div>
-      
-      
+     
       <TitleMessage/>
     </div>
   )

@@ -6,6 +6,8 @@ import Sphere from "./Pages/iconcloud";
 import Link1icon from "./Pages/Linkicon";
 import Skills from "./Pages/Skills";
 import CustomizedTimeline from "./Pages/PROJECTS/Projectroot";
+import Aboutme from "./Pages/Aboutme";
+import Contact from "./Pages/Contact";
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
             </div>
           </div>
         </div>
+        <div id="aboutme" className="p-5">
+          <Aboutme/>
+        </div>
         <div id="skills" className="p-5">
           <Skills/>
         </div>
@@ -31,7 +36,7 @@ function App() {
           <CustomizedTimeline/>
         </div>
         <div id="contact" className="p-5 m-5">
-          contsct
+          <Contact/>
         </div>
       </div>
     </div>
