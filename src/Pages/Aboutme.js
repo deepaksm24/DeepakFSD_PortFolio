@@ -54,7 +54,7 @@ function Aboutme() {
               </a>
 
               <a
-                href=""
+                href="https://drive.google.com/file/d/1QvXvDL62JZMEt-olTM8JwupJ7PwT95L1/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -5,7 +5,7 @@ function Resumepage() {
   return (
     <div>
       <a
-      href="https://docs.google.com/document/d/1oZw41S09-OtztFcMNTb8D2hFlyOHs64E/edit?usp=sharing&ouid=104668654161739966033&rtpof=true&sd=true"
+      href="https://drive.google.com/file/d/1QvXvDL62JZMEt-olTM8JwupJ7PwT95L1/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"     
       >
