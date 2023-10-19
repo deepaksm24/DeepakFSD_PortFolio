@@ -31,6 +31,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MovieBook from "./Projectimages/MovieBook.png";
 import Zen from "./Projectimages/zenclass.png";
 import myschool from "./Projectimages/myschool.png";
+import todo from "./Projectimages/Todo.png";
 
 
 
@@ -52,6 +53,10 @@ import { Button, Grid } from "@mui/material";
 import Project1 from "./Project1";
 import Project2 from "./Project2";
 import Project3 from "./Project3";
+import Project4 from "./Project4";
+
+
+import { topcoder } from "simple-icons";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -81,7 +86,10 @@ export default function CustomizedTimeline() {
   };
 
 
-
+  const [expanded4, setExpanded4] = React.useState(false);
+  const handleExpandClick4 = () => {
+    setExpanded4(!expanded4);
+  };
 
 
 
@@ -300,26 +308,23 @@ export default function CustomizedTimeline() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent>
-            {/* <Card
-              className="cardstyleproject"
+            {/* project 4 */}
+            {<Card
+              className="cardstyleproject border border-2"
               // style={{width: "22rem"}}
             >
               <CardHeader
-                // avatar={
-                //   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                //     M
-                //   </Avatar>
-                // }
-                title="MovieBook"
-                subheader="Simple Movie Booking App - MERN"
+                
+                title="ToDo App"
+                subheader="An App to manke note of our tasks - MERN"
               />
 
-              <CardMedia component="img" image={MovieBook} alt="Booking App" />
+              <CardMedia component="img" image={todo} alt="Todo App" />
 
               <CardActions disableSpacing>
                 <IconButton>
                   <a
-                    href="https://moviebook-w1wb.onrender.com/"
+                    href="https://comfy-gnome-57fbec.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -330,7 +335,7 @@ export default function CustomizedTimeline() {
                 </IconButton>
                 <IconButton>
                   <a
-                    href="https://github.com/deepaksm24/moviesbook"
+                    href="https://github.com/deepaksm24/MERN-TODOAPP"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -341,21 +346,21 @@ export default function CustomizedTimeline() {
                 </IconButton>
                 <IconButton>
                   <ExpandMore
-                    expand={expanded}
-                    onClick={handleExpandClick}
-                    aria-expanded={expanded}
+                    expand={expanded4}
+                    onClick={handleExpandClick4}
+                    aria-expanded={expanded4}
                     aria-label="show more"
                   >
                     <ExpandMoreIcon aria-label="show more" />
                   </ExpandMore>
                 </IconButton>
               </CardActions>
-              <Collapse in={expanded} timeout="auto" unmountOnExit>
+              <Collapse in={expanded4} timeout="auto" unmountOnExit>
                 <CardContent>
-                  <Project1 />
+                  <Project3/>
                 </CardContent>
               </Collapse>
-            </Card> */}
+            </Card> }
           </TimelineContent>
         </TimelineItem>
         
